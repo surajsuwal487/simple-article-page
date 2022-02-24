@@ -1,0 +1,97 @@
+body {
+    font-size: 1.125rem;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+/* form a minimum width of 400px and bigger?
+@media (min-width:600px) and (orientation: landscape) {
+    body{
+        background: white;
+    }
+}
+from a minimum width of 800px upto a width of 1000px.
+@media (min-width:800px) and (max-width:1000px){
+    body{
+        background: yellow;
+    } */
+
+
+/* typography */
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+h1 span{
+    color: #b7832f;
+}
+
+h2
+{
+    margin: 15px 0px;
+    font-size: 1.5rem;
+}
+p{
+    margin-top: 0;
+}
+
+/* layot */
+.container{
+    background-color: pink;
+    width: 95%;
+    max-width: 14000px;
+    display: grid;
+    margin: auto;
+    border: 1px solid black;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* align-item: stretch is default */
+/* when we do a display flex, everything turns into a column.And by default, they stretch to match the height of their parent.  */
+.columns{
+    display: flex;
+    margin: 1em 0;
+    border: 1px solid black;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media (max-width: 600px) {
+    .columns{
+        flex-direction: column;
+    }
+}
+
+.col-1{
+    width: 20%;
+
+}
+
+.col-2{
+    width: 45%;
+}  
+
+.col-3{
+   width: 70%;
+}
+
+@media (max-width:600px){
+    .col-1,
+    .col-2,
+    .col-3{
+        width: 100%;
+    }
+}
+
+.col-bg {
+    background: #212614;
+    color: white;
+    padding: 1em;
+}
+
+/* media queries - basic syntax @media () { ... } */
